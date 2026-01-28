@@ -2,6 +2,9 @@ import config from "@tambo-ai/eslint-config/base";
 import nextJsConfig from "@tambo-ai/eslint-config/next-js";
 import { defineConfig } from "eslint/config";
 import globals from "globals";
+import { createRequire } from 'module';
+
+const require = createRequire(import.meta.url);
 
 export default defineConfig([
   {

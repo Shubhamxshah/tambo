@@ -16,8 +16,6 @@ out
 .source
 
 # env files
-.env
-.env.*
 docker.env
 !.env.example
 
@@ -54,3 +52,4 @@ yarn-error.log*
 *.tsbuildinfo
 next-env.d.ts
 react-sdk/dist/**
+config.bat

@@ -1,5 +1,8 @@
 import reactInternal from "@tambo-ai/eslint-config/react-internal";
 import { defineConfig } from "eslint/config";
+import { createRequire } from 'module';
+
+const require = createRequire(import.meta.url);
 
 export default defineConfig([
   ...reactInternal,

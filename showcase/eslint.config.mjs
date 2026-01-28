@@ -1,6 +1,9 @@
 import nextJsConfig from "@tambo-ai/eslint-config/next-js";
 import globals from "globals";
 import tseslint from "typescript-eslint";
+import { createRequire } from 'module';
+
+const require = createRequire(import.meta.url);
 
 export default tseslint.config(
   ...nextJsConfig,
