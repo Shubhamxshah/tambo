@@ -8,6 +8,9 @@ import rehypePrettyCode from "rehype-pretty-code";
 import remarkGfm from "remark-gfm";
 import remarkMdxFrontmatter from "remark-mdx-frontmatter";
 import { remarkInjectBlogLayout } from "./lib/mdx/inject-blog-layout.mjs";
+import { createRequire } from 'module';
+
+const require = createRequire(import.meta.url);
 
 const jiti = createJiti(fileURLToPath(import.meta.url));
 

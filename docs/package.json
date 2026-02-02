@@ -3,11 +3,11 @@
   "version": "1.24.0",
   "license": "MIT",
   "scripts": {
-    "build": "next build",
+    "build": "node init && next build",
     "check-types": "tsc --noEmit",
-    "dev": "next dev --turbo -p 8263",
+    "dev": "node init && next dev --turbo -p 8263",
     "lint": "eslint .",
-    "start": "next start",
+    "start": "node init && next start",
     "postinstall": "fumadocs-mdx",
     "postbuild": "next-sitemap",
     "clean": "rimraf .next"

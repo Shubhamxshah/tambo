@@ -4,9 +4,9 @@
   "private": true,
   "type": "module",
   "scripts": {
-    "dev": "next dev -p 8260",
-    "build": "SKIP_ENV_VALIDATION=true next build --no-lint",
-    "start": "next start",
+    "dev": "node init && next dev -p 8260",
+    "build": "node init && SKIP_ENV_VALIDATION=true next build --no-lint",
+    "start": "node init && next start",
     "lint": "eslint",
     "lint:fix": "eslint --fix",
     "check-types": "tsc --noEmit",

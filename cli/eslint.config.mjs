@@ -3,6 +3,9 @@
 import eslint from "@eslint/js";
 import reactConfig from "@tambo-ai/eslint-config/react-internal";
 import tseslint from "typescript-eslint";
+import { createRequire } from 'module';
+
+const require = createRequire(import.meta.url);
 
 export default tseslint.config(
   {

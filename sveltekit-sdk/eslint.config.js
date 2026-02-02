@@ -2,6 +2,9 @@ import eslint from "@eslint/js";
 import tseslint from "typescript-eslint";
 import svelte from "eslint-plugin-svelte";
 import globals from "globals";
+import { createRequire } from 'module';
+
+const require = createRequire(import.meta.url);
 
 export default tseslint.config(
   eslint.configs.recommended,

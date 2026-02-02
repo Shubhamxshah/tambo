@@ -1,4 +1,7 @@
 import { createMDX } from "fumadocs-mdx/next";
+import { createRequire } from 'module';
+
+const require = createRequire(import.meta.url);
 
 const withMDX = createMDX();
 

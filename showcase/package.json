@@ -4,10 +4,10 @@
   "private": true,
   "license": "MIT",
   "scripts": {
-    "dev": "next dev -p 8262",
-    "build": "next build",
+    "dev": "node init && next dev -p 8262",
+    "build": "node init && next build",
     "postbuild": "next-sitemap",
-    "start": "next start",
+    "start": "node init && next start",
     "lint": "eslint",
     "test": "node --test tests/code-snippets.test.mjs && jest",
     "test:unit": "jest",
