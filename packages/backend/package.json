@@ -12,7 +12,7 @@
     "NOTICE"
   ],
   "scripts": {
-    "build": "tsc",
+    "build": "node init && tsc",
     "test": "jest",
     "test:cov": "jest --coverage",
     "test:watch": "jest --watch",

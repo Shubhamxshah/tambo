@@ -1,25 +1,23 @@
 {
-  "editor.formatOnSave": true,
+  "search.exclude": {
+    "**/.sst": true
+  },
+  "task.allowAutomaticTasks": true,
+  "typescript.tsserver.experimental.enableProjectDiagnostics": true,
   "editor.defaultFormatter": "esbenp.prettier-vscode",
-  "editor.codeActionsOnSave": {
-    "source.organizeImports": "explicit",
-    "source.fixAll.eslint": "explicit"
-  },
-  "[mdx]": {
-    "editor.defaultFormatter": "unifiedjs.vscode-mdx"
-  },
-  "cSpell.enabled": true,
-  "jest.runMode": "deferred",
-  "jest.jestCommandLine": "npx turbo test --",
-  "jest.coverageFormatter": "GutterFormatter",
-  "jest.virtualFolders": [
-    {"name": "@tambo-ai-cloud/web", "rootPath": "apps/web", "jestCommandLine": "npx turbo -F @tambo-ai-cloud/web test --"},
-    {"name": "@tambo-ai-cloud/api", "rootPath": "apps/api", "jestCommandLine": "npx turbo -F @tambo-ai-cloud/api test --"},
-    {"name": "@tambo-ai-cloud/core", "rootPath": "packages/core", "jestCommandLine": "npx turbo -F @tambo-ai-cloud/core test --"},
-    {"name": "@tambo-ai-cloud/backend", "rootPath": "packages/backend", "jestCommandLine": "npx turbo -F @tambo-ai-cloud/backend test --"},
-    {"name": "@tambo-ai/react", "rootPath": "react-sdk", "jestCommandLine": "npx turbo -F @tambo-ai/react test --"},
-    {"name": "@tambo-ai/showcase", "rootPath": "showcase", "jestCommandLine": "npx turbo -F @tambo-ai/showcase test --"},
-    {"name": "tambo-cli", "rootPath": "cli", "jestCommandLine": "npx turbo -F tambo test --"},
-  ],
-  "testing.automaticallyOpenTestResults": "neverOpen"
+  "typescript.preferences.importModuleSpecifier": "relative",
+  "typescript.tsdk": "node_modules/typescript/lib",
+  "debug.openDebug": "neverOpen",
+  "problems.autoReveal": true,
+  "terminal.integrated.hideOnStartup": "always",
+  "terminal.integrated.defaultProfile.windows": "Command Prompt",
+  "terminal.integrated.inheritEnv": false,
+  "jestrunner.configPath": "jest.unit.config.cjs",
+  "compile-hero.disable-compile-files-on-did-save-code": true,
+  "tasks": {
+    "label": "lint on open",
+    "type": "shell",
+    "command": "npm run lint",
+    "runOn": "folderOpen"
+  }
 }

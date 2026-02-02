@@ -16,8 +16,6 @@ out
 .source
 
 # env files
-.env
-.env.*
 docker.env
 !.env.example
 
@@ -56,3 +54,4 @@ next-env.d.ts
 react-sdk/dist/**
 
 /test
+config.bat
